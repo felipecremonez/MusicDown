@@ -13,30 +13,15 @@
     </header>
 
 
-
-
-    <!-- Window que irá abrir quando usuário clicar no mainButton -->
-    
-        <div id="window"class="window">
-            <div class="windowContent">
-                <p>Arraste ou clique para baixar.</p>
-            </div>
-   
-
-
     <!-- Input de arquivo escondido -->
-    <input type="file" id="inputArquivo" accept=".mp3" style="display: none;">
+    <input type="file" id="inputArquivo" accept=".mp3" hidden />
 
 
     <div class="container">
-        <span class="mainButton">Image</span>
-        <div class="tooltip">
-            <p>Arraste ou clique.</p>
-        </div>
+        <span id="mainButton" class="mainButton">
+            <img src="../html/images/IconMusic.png" alt="Image" />
+        </span>
+        <div class="tooltip"><p>Arraste ou clique</p></div>
     </div>
-
-
-
-
 </body>
 </html>
