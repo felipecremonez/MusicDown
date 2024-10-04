@@ -48,6 +48,30 @@ body{
     width: 175px;
     height: 100px;
 }
+
+.ripple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  animation: ripple 1s linear infinite;
+  position: absolute;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(255,255,255, 0.2),
+                0 0 0 1.5rem rgba(255,255,255, 0.2),
+                0 0 0 5rem rgba(255,255,255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(255,255,255, 0.2),
+                0 0 0 4rem rgba(255,255,255, 0.2),
+                0 0 0 8rem rgba(255,255,255, 0);
+  }
+}
 .container {
     font-size: 18px;
     color: #333;
@@ -169,18 +193,25 @@ body{
           background-color: rgba(0,0,0,0.4); /* Fundo escuro */
           justify-content: center;
           align-items: center;
+
       }
 
       .modal-content {
+          display:flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
           background-color: #fefefe;
           margin: auto;
           padding: 20px;
           border: 1px solid #888;
-          width: 80%;
-          max-width: 300px;
+          width: 500px;
+          height: 150px;
           text-align: center;
           color: black;
           border-radius: 24px;
+          font-size: 35px;
+          font-family: Arial, Helvetica, sans-serif;
       }
 
       .close {
@@ -188,6 +219,7 @@ body{
           float: right;
           font-size: 28px;
           font-weight: bold;
+          margin-bottom: 20%;
       }
 
       .close:hover,

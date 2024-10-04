@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+
     <script src="../js/script.js" defer></script>
     <title>MusicDown</title>
+    <link rel="icon" href="../html/images/IconMusic.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -16,14 +18,14 @@
     <!-- Input de arquivo escondido -->
     <input type="file" id="inputArquivo" accept=".mp3" hidden />
 
-
-    <div class="container">
-        <span id="mainButton" class="mainButton">
-            <img src="../html/images/IconMusic.png" alt="Image" />
-        </span>
-        <div class="tooltip"><p>Arraste ou clique</p></div>
+    <div class="ripple" style="animation-delay: 0s">
+        <div class="container">
+            <span id="mainButton" class="mainButton">
+                <img src="../html/images/IconMusic.png" alt="Image" />
+            </span>
+            <div class="tooltip"><p>Arraste ou clique</p></div>
+        </div>
     </div>
-
      <!-- Modal -->
      <div id="myModal" class="modal">
         <div class="modal-content">
