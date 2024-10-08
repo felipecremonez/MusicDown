@@ -25,6 +25,28 @@ body{
     color: white;
     font-size: 1.25em ;
 }
+.navbar {
+  position: absolute;
+  top: 1%;
+  right: 3px;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.navbar a img {
+  vertical-align: middle; /* Para alinhar a imagem verticalmente no centro */
+  width: 45px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  transform: translateY(3px);
+}
 
 .mainButton{
     display: flex;
@@ -205,12 +227,12 @@ body{
           margin: auto;
           padding: 20px;
           border: 1px solid #888;
-          width: 500px;
+          width: 400px;
           height: 150px;
           text-align: center;
           color: black;
           border-radius: 24px;
-          font-size: 35px;
+          font-size: 25px;
           font-family: Arial, Helvetica, sans-serif;
       }
 
@@ -227,4 +249,17 @@ body{
           color: black;
           text-decoration: none;
           cursor: pointer;
+      }
+
+
+
+
+      @media screen and (max-width: 600px) {
+        .modal-content {
+          width: 75%;
+          font-size: 20px;
+        }
+        .close {
+          margin-bottom: 80px;
+        }
       }
