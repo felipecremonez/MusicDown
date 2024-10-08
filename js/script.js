@@ -12,12 +12,12 @@ spam.addEventListener('click', () => {
 });
 
 // Adiciona um evento de mudança ao input de arquivo
-inputArquivo.addEventListener('change', (event) => {
-    const arquivoSelecionado = event.target.files[0];
-    if (arquivoSelecionado) {
-        alert(`Você selecionou o arquivo: ${arquivoSelecionado.name}`);
-    }
-});
+// inputArquivo.addEventListener('change', (event) => {
+//     const arquivoSelecionado = event.target.files[0];
+//     if (arquivoSelecionado) {
+//         alert(`Você selecionou o arquivo: ${arquivoSelecionado.name}`);
+//     }
+// });
 
 function openWindow() {
     let input = document.getElementById('inputArquivo');
@@ -40,7 +40,7 @@ inputArquivo.addEventListener('change', (event) => {
         if (validarArquivoMP3(arquivoSelecionado)) {
             modalMensagem.textContent = `Você selecionou um arquivo MP3 válido: ${arquivoSelecionado.name}`;
         } else {
-            modalMensagem.textContent = 'Por favor, selecione um arquivo MP3 válido.';
+            modalMensagem.textContent = 'Apenas arquivos MP3 são permitidos.';
         }
         modal.style.display = 'flex'; // Exibe o modal
     }

@@ -45,7 +45,7 @@ body{
   transition: all 0.5s ease;
 }
 .navbar a:hover {
-  transform: translateY(3px);
+  transform: translateY(-3px);
 }
 
 .mainButton{
